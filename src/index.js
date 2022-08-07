@@ -39,7 +39,9 @@ function countryEntry(e) {
                 countryList.insertAdjacentHTML("beforeend", countryListGenerate(countries));  
             }
         })
-    .catch(incorrectName())
+        .catch(error => incorrectName())
+    //         console.log('error', error))
+    // .catch(incorrectName())
 };
 
 
